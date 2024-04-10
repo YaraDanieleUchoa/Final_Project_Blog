@@ -6,6 +6,17 @@
     <title>Postagens</title>
 </head>
 <body>
-    <h1>Pagina de criar post</h1>
+    <h1>Página de criar post</h1>
+
+    <form action="/criar_post/" method="post">
+        {% csrf_token %}
+        <label for="titulo">Título:</label><br>
+        <input type="text" id="titulo" name="titulo"><br><br>
+        
+        <label for="conteudo">Conteúdo:</label><br>
+        <textarea id="conteudo" name="conteudo"></textarea><br><br>
+        
+        <input type="submit" value="Criar Postagem">
+    </form>
 </body>
 </html>
