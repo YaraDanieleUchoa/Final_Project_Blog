@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/login.css' %}">
 </head>
 <body>
-    <h1>Pagina de login</h1>
+    <div class="login">
+        
+        <div class="form-container">
+            <div id="header">
+                <h1><a href="#">Página de Login</a></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button class="search-button"><img src="{% static 'assets/lupa.png' %}" alt="Pesquisar" class="lupa-icon"></button>
+
+            </div>
+            <div id="container">
+                <img src="{% static 'assets/logo.png' %}" alt="Minha Imagem" class="centered-image">
+                <form action="" method="">
+                    <div class="form-row">
+                        <label for="id_username">Username</label>
+                        <input type="text" class="form" id="id_username" name="username">
+                    </div>
+                    <div class="form-row">
+                        <label for="id_password">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="id_password" name="password">
+                        </div>
+                    </div>
+                    <div class="submit-row">
+                        <input type="submit" value="Enviar" class="cadastro">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
 </body>
 </html>
