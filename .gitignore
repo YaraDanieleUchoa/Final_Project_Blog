@@ -3,7 +3,12 @@
 *.pot
 *.pyc
 __pycache__
+**/*.pyc
+
 media
+
+#teste teste teste
+
 
 # Backup files # 
 *.bak 
